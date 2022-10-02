@@ -5,5 +5,23 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    background-color: white;
+}
+
+.cell {
+    border: 2px solid blue;
+    color: black;
+    padding: 8px;
+    font-size: 4rem;
+    text-align: center;
 }
