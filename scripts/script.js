@@ -5,8 +5,13 @@ const Player = (name, symbol) => {
 
 const gameBoard = (() => {
     // stuff that happens to game goes here
-    const board = [];
-    return {board};
+    const cells = Array.from(document.querySelectorAll('.cell'));
+    
+    cells.forEach(cell => cell.addEventListener('click', (e) => {
+        console.log(e.target.getAttribute('data-cell'));
+    }));
+
+    return {cells};
 })();
 
 const displayController = (() => {
