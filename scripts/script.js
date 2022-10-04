@@ -9,7 +9,7 @@ const gameBoard = (() => {
     
     cells.forEach(cell => cell.addEventListener('click', (e) => {
         console.log(e.target.getAttribute('data-cell'));
-        document.getElementsByClassName('cell').disabled = true;
+        
     }));
 
     return {cells};
